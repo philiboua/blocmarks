@@ -12,24 +12,27 @@ source 'https://rubygems.org'
   gem 'sdoc', '~> 0.4.0', group: :doc
 
 
-  group :production do 
-
-    gem 'pg'
-    gem 'rails_12factor'
-
-  end
-
-  group :development, :test do
-
-    gem 'byebug'
-
-  end
-
   group :development do
-
     gem 'sqlite3'
     gem 'web-console', '~> 2.0'
     gem 'spring'
-
   end
+
+  group :development, :test do
+    gem 'rspec-rails'
+    gem 'spring-commands-rspec'
+    gem 'guard-rspec', require: false
+    gem 'byebug'
+  end
+
+  group :test do 
+    gem 'capybara'
+  end
+
+  group :production do 
+    gem 'pg'
+    gem 'rails_12factor'
+  end
+
+  
 
