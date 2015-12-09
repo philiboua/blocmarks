@@ -8,6 +8,7 @@ source 'https://rubygems.org'
   gem 'jquery-rails'
   gem 'turbolinks'
   gem 'jbuilder', '~> 2.0'
+  gem 'haml-rails'
   gem 'sdoc', '~> 0.4.0', group: :doc
 
 
@@ -17,7 +18,7 @@ source 'https://rubygems.org'
     gem 'rails_12factor'
 
   end
-  
+
   group :development, :test do
 
     gem 'byebug'
