@@ -10,6 +10,7 @@ source 'https://rubygems.org'
   gem 'jbuilder', '~> 2.0'
   gem 'faker'
   gem 'devise'
+  gem "figaro"
   gem 'haml-rails'
   gem 'bootstrap-sass'
   gem 'simple_form'

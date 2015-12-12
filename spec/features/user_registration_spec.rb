@@ -4,10 +4,8 @@ RSpec.feature "User registration" do
 
   context "successful sign up" do 
 
-    
     let(:user) { build(:user) }
     
-
     it "renders the home page with flash message" do 
       visit root_path
       click_link "sign up" 
