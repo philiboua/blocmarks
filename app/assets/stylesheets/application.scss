@@ -1,0 +1,13 @@
+/*
+ *= require_self
+ */
+
+ // "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"
+@import 'bootstrap-sprockets';
+@import 'bootstrap';
+
+// Import Mixins 
+@import 'base/mixins/_responsive_layout.scss';
+
+// Import Modules 
+@import 'modules/layout.scss';
